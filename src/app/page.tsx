@@ -12,6 +12,7 @@ import { Badge } from '@/components/ui/badge'
 import { Button } from '@/components/ui/button'
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from '@/components/ui/card'
 import { Checkbox } from '@/components/ui/checkbox'
+import { Container } from '@/components/ui/container'
 import { Input } from '@/components/ui/input'
 import { Label } from '@/components/ui/label'
 import { RadioGroup, RadioGroupItem } from '@/components/ui/radio-group'
@@ -35,17 +36,17 @@ export default function Home() {
     <div className="min-h-svh flex flex-col mx-auto">
       {/* Header */}
       <header className="sticky top-0 z-50 w-full border-b bg-background/95 backdrop-blur supports-[backdrop-filter]:bg-background/60">
-        <div className="container flex h-14 items-center justify-between">
+        <Container className="flex h-14 items-center justify-between">
           <Link className="flex items-center space-x-2" href="/">
             <span className="font-bold">UI Components</span>
           </Link>
           <ThemeSwitcher />
-        </div>
+        </Container>
       </header>
 
       {/* Main Content */}
       <main className="flex-1 container py-8">
-        <div className="flex flex-col gap-8 max-w-7xl mx-auto">
+        <Container maxWidth="2xl" className="flex flex-col gap-8">
           {/* Introduction */}
           <section className="flex flex-col gap-6 text-center">
             <div className="space-y-2">
@@ -201,7 +202,7 @@ export default function Home() {
               </div>
             </CardContent>
           </Card>
-        </div>
+        </Container>
       </main>
 
       {/* Footer */}

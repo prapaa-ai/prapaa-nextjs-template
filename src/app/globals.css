@@ -41,6 +41,26 @@
   --radius-md: calc(var(--radius) - 2px);
   --radius-lg: var(--radius);
   --radius-xl: calc(var(--radius) + 4px);
+  --animate-accordion-down: accordion-down 0.2s ease-out;
+  --animate-accordion-up: accordion-up 0.2s ease-out;
+
+  @keyframes accordion-down {
+    from {
+      height: 0;
+    }
+    to {
+      height: var(--radix-accordion-content-height);
+    }
+  }
+
+  @keyframes accordion-up {
+    from {
+      height: var(--radix-accordion-content-height);
+    }
+    to {
+      height: 0;
+    }
+  }
 }
 
 :root {
@@ -73,6 +93,17 @@
   --chart-4: oklch(0.65 0.1 140); /* Sage */
   --chart-5: oklch(0.45 0.12 45); /* Bronze */
   --backdrop-blur: blur(8px);
+
+  /* --- Sidebar variables using main theme --- */
+  --sidebar: var(--background);
+  --sidebar-foreground: var(--foreground);
+  --sidebar-primary: var(--primary);
+  --sidebar-primary-foreground: var(--primary-foreground);
+  --sidebar-accent: var(--accent);
+  --sidebar-accent-foreground: var(--accent-foreground);
+  --sidebar-border: var(--border);
+  --sidebar-ring: var(--ring);
+  /* --- End Sidebar variables --- */
 }
 
 .dark {
@@ -103,6 +134,17 @@
   --chart-3: oklch(0.7 0.12 200); /* Steel Blue */
   --chart-4: oklch(0.75 0.1 140); /* Sage */
   --chart-5: oklch(0.6 0.12 45); /* Bronze */
+
+  /* --- Sidebar variables using main theme --- */
+  --sidebar: var(--background);
+  --sidebar-foreground: var(--foreground);
+  --sidebar-primary: var(--primary);
+  --sidebar-primary-foreground: var(--primary-foreground);
+  --sidebar-accent: var(--accent);
+  --sidebar-accent-foreground: var(--accent-foreground);
+  --sidebar-border: var(--border);
+  --sidebar-ring: var(--ring);
+  /* --- End Sidebar variables --- */
 }
 
 @layer base {
@@ -110,11 +152,7 @@
     @apply border-border;
   }
 
-  :root {
-    --background: 0 0% 100%;
-    --foreground: 0 0% 3.9%;
-    @apply transition-[background-color,border-color] duration-100 ease-out;
-  }
+  /* Removed duplicate :root block */
 
   body {
     @apply bg-background text-foreground select-none transition-[background-color,color] duration-100 ease-out;
@@ -137,7 +175,7 @@
   button,
   a,
   [role='button'] {
-    @apply transition-[background-color,color,opacity,border-color] duration-150 ease-out 
+    @apply transition-[background-color,color,opacity,border-color] duration-150 ease-out
            hover:opacity-85 active:opacity-100 cursor-pointer select-none
            focus:outline-none;
   }
@@ -145,7 +183,7 @@
   input,
   select,
   textarea {
-    @apply transition-all duration-300 ease-out 
+    @apply transition-all duration-300 ease-out
            focus:outline-none focus:bg-[--input-focus]
            focus:border-primary/50 select-text;
   }
@@ -154,8 +192,8 @@
   [role='switch'],
   [role='checkbox'],
   [role='radio'] {
-    @apply transition-all duration-200 ease-out 
-           hover:opacity-90 active:opacity-100 
+    @apply transition-all duration-200 ease-out
+           hover:opacity-90 active:opacity-100
            cursor-pointer select-none;
   }
 
@@ -204,7 +242,10 @@
     font-family: var(--font-sans);
   }
 
-  pre, code {
+  pre,
+  code {
     font-family: var(--font-mono);
   }
 }
+
+/* Removed duplicate @layer base block */

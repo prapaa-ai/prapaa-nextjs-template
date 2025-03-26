@@ -27,12 +27,12 @@
 
 ## Form Elements
 
-- [ ] Input Fields
-- [ ] Text Areas
-- [ ] Select Dropdowns
-- [ ] Checkboxes
-- [ ] Radio Buttons
-- [ ] Toggle Switches
+- [x] Input Fields
+- [x] Text Areas
+- [x] Select Dropdowns
+- [x] Checkboxes
+- [x] Radio Buttons
+- [x] Toggle Switches
 - [ ] Form Validation
 
 ## Navigation
@@ -40,14 +40,14 @@
 - [ ] Navbar
 - [ ] Sidebar
 - [ ] Breadcrumbs
-- [ ] Tabs
+- [x] Tabs
 - [ ] Pagination
 - [ ] Command Palette
 
 ## Feedback & Alerts
 
 - [ ] Toast Notifications
-- [ ] Alert Boxes
+- [x] Alert Boxes
 - [ ] Progress Indicators
 - [ ] Loading States
 - [ ] Error Messages
@@ -72,7 +72,7 @@
 
 ## Actions & Controls
 
-- [ ] Buttons System
+- [x] Buttons System
 - [ ] Dropdown Menus
 - [ ] Modal Dialogs
 - [ ] Popovers
