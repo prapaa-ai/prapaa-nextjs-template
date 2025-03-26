@@ -1,8 +1,14 @@
 'use client'
 
 import { useTheme } from '@/components/providers/theme-provider'
+import {
+  DropdownMenu,
+  DropdownMenuContent,
+  DropdownMenuItem,
+  DropdownMenuTrigger,
+} from '@/components/ui/dropdown-menu'
+import { Monitor, Moon, Sun } from 'lucide-react'
 import { useEffect, useState } from 'react'
-import { Moon, Sun, Monitor } from 'lucide-react'
 
 export function ThemeSwitcher() {
   const [mounted, setMounted] = useState(false)
@@ -17,43 +23,36 @@ export function ThemeSwitcher() {
     return null
   }
 
+  const getCurrentIcon = () => {
+    if (theme === 'light') return <Sun className="h-5 w-5" />
+    if (theme === 'dark') return <Moon className="h-5 w-5" />
+    return <Monitor className="h-5 w-5" />
+  }
+
   return (
-    <div className="flex items-center gap-2 rounded-lg border p-1">
-      <button
-        onClick={() => setTheme('light')}
-        className={`rounded-md p-2 transition-colors ${
-          theme === 'light'
-            ? 'bg-accent text-accent-foreground'
-            : 'hover:bg-muted/50'
-        }`}
-        aria-label="Light theme"
-      >
-        <Sun className="h-5 w-5" />
-      </button>
-
-      <button
-        onClick={() => setTheme('dark')}
-        className={`rounded-md p-2 transition-colors ${
-          theme === 'dark'
-            ? 'bg-accent text-accent-foreground'
-            : 'hover:bg-muted/50'
-        }`}
-        aria-label="Dark theme"
-      >
-        <Moon className="h-5 w-5" />
-      </button>
-
-      <button
-        onClick={() => setTheme('system')}
-        className={`rounded-md p-2 transition-colors ${
-          theme === 'system'
-            ? 'bg-accent text-accent-foreground'
-            : 'hover:bg-muted/50'
-        }`}
-        aria-label="System theme"
-      >
-        <Monitor className="h-5 w-5" />
-      </button>
-    </div>
+    <DropdownMenu>
+      <DropdownMenuTrigger asChild>
+        <button
+          className="flex h-9 w-9 items-center justify-center rounded-md border bg-background transition-colors hover:bg-muted"
+          aria-label="Select theme"
+        >
+          {getCurrentIcon()}
+        </button>
+      </DropdownMenuTrigger>
+      <DropdownMenuContent align="end">
+        <DropdownMenuItem onClick={() => setTheme('light')}>
+          <Sun className="mr-2 h-4 w-4" />
+          <span>Light</span>
+        </DropdownMenuItem>
+        <DropdownMenuItem onClick={() => setTheme('dark')}>
+          <Moon className="mr-2 h-4 w-4" />
+          <span>Dark</span>
+        </DropdownMenuItem>
+        <DropdownMenuItem onClick={() => setTheme('system')}>
+          <Monitor className="mr-2 h-4 w-4" />
+          <span>System</span>
+        </DropdownMenuItem>
+      </DropdownMenuContent>
+    </DropdownMenu>
   )
 }
