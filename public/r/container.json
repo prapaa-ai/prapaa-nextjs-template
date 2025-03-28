@@ -1,0 +1,15 @@
+{
+  "$schema": "https://ui.shadcn.com/schema/registry-item.json",
+  "name": "container",
+  "type": "registry:ui",
+  "description": "A container component for layout purposes.",
+  "dependencies": [],
+  "registryDependencies": [],
+  "files": [
+    {
+      "path": "src/components/ui/container.tsx",
+      "content": "import { cn } from '@/lib/utils'\nimport * as React from 'react'\n\nexport interface ContainerProps extends React.HTMLAttributes<HTMLDivElement> {\n  /** Maximum width of the container. Defaults to \"xl\" */\n  maxWidth?: 'sm' | 'md' | 'lg' | 'xl' | '2xl' | 'full'\n  /** Whether to center the container. Defaults to true */\n  centered?: boolean\n}\n\nconst maxWidthClasses = {\n  sm: 'max-w-screen-sm',\n  md: 'max-w-screen-md',\n  lg: 'max-w-screen-lg',\n  xl: 'max-w-screen-xl',\n  '2xl': 'max-w-screen-2xl',\n  full: 'max-w-full',\n}\n\nexport function Container({\n  className,\n  maxWidth = 'xl',\n  centered = true,\n  children,\n  ...props\n}: ContainerProps) {\n  return (\n    <div\n      className={cn(\n        maxWidthClasses[maxWidth],\n        centered && 'mx-auto',\n        'w-full px-4 sm:px-6 lg:px-8',\n        className\n      )}\n      {...props}\n    >\n      {children}\n    </div>\n  )\n}\n",
+      "type": "registry:ui"
+    }
+  ]
+}

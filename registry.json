@@ -1,0 +1,672 @@
+{
+	"$schema": "https://ui.shadcn.com/schema/registry.json",
+	"name": "prapaa-registry",
+	"homepage": "https://github.com/prapaa-ai/prapaa-nextjs-template",
+	"items": [
+		{
+			"name": "accordion",
+			"description": "A vertically stacked set of interactive headings that each reveal a section of content.",
+			"type": "registry:ui",
+			"dependencies": [
+				"@radix-ui/react-accordion"
+			],
+			"registryDependencies": [],
+			"files": [
+				{
+					"path": "src/components/ui/accordion.tsx",
+					"type": "registry:ui"
+				}
+			]
+		},
+		{
+			"name": "alert-dialog",
+			"description": "A modal dialog that interrupts the user with important content and expects a response.",
+			"type": "registry:ui",
+			"dependencies": [
+				"@radix-ui/react-alert-dialog"
+			],
+			"registryDependencies": [],
+			"files": [
+				{
+					"path": "src/components/ui/alert-dialog.tsx",
+					"type": "registry:ui"
+				}
+			]
+		},
+		{
+			"name": "alert",
+			"description": "Displays a callout for user attention.",
+			"type": "registry:ui",
+			"dependencies": [],
+			"registryDependencies": [],
+			"files": [
+				{
+					"path": "src/components/ui/alert.tsx",
+					"type": "registry:ui"
+				}
+			]
+		},
+		{
+			"name": "aspect-ratio",
+			"description": "Displays content within a desired ratio.",
+			"type": "registry:ui",
+			"dependencies": [
+				"@radix-ui/react-aspect-ratio"
+			],
+			"registryDependencies": [],
+			"files": [
+				{
+					"path": "src/components/ui/aspect-ratio.tsx",
+					"type": "registry:ui"
+				}
+			]
+		},
+		{
+			"name": "avatar",
+			"description": "An image element with a fallback for representing the user.",
+			"type": "registry:ui",
+			"dependencies": [
+				"@radix-ui/react-avatar"
+			],
+			"registryDependencies": [],
+			"files": [
+				{
+					"path": "src/components/ui/avatar.tsx",
+					"type": "registry:ui"
+				}
+			]
+		},
+		{
+			"name": "badge",
+			"description": "Displays a badge or a component that looks like a badge.",
+			"type": "registry:ui",
+			"dependencies": [],
+			"registryDependencies": [],
+			"files": [
+				{
+					"path": "src/components/ui/badge.tsx",
+					"type": "registry:ui"
+				}
+			]
+		},
+		{
+			"name": "breadcrumb",
+			"description": "A navigation component that helps users understand the hierarchy of a website.",
+			"type": "registry:ui",
+			"dependencies": [
+				"@radix-ui/react-slot"
+			],
+			"registryDependencies": [],
+			"files": [
+				{
+					"path": "src/components/ui/breadcrumb.tsx",
+					"type": "registry:ui"
+				}
+			]
+		},
+		{
+			"name": "button",
+			"description": "Displays a button or a component that looks like a button.",
+			"type": "registry:ui",
+			"dependencies": [
+				"@radix-ui/react-slot"
+			],
+			"registryDependencies": [],
+			"files": [
+				{
+					"path": "src/components/ui/button.tsx",
+					"type": "registry:ui"
+				}
+			]
+		},
+		{
+			"name": "calendar",
+			"description": "A date field component that allows users to enter and edit date.",
+			"type": "registry:ui",
+			"dependencies": [
+				"react-day-picker"
+			],
+			"registryDependencies": [
+				"button"
+			],
+			"files": [
+				{
+					"path": "src/components/ui/calendar.tsx",
+					"type": "registry:ui"
+				}
+			]
+		},
+		{
+			"name": "card",
+			"description": "Displays a card with header, content, and footer.",
+			"type": "registry:ui",
+			"dependencies": [],
+			"registryDependencies": [],
+			"files": [
+				{
+					"path": "src/components/ui/card.tsx",
+					"type": "registry:ui"
+				}
+			]
+		},
+		{
+			"name": "carousel",
+			"description": "A carousel component with motion support.",
+			"type": "registry:ui",
+			"dependencies": [
+				"embla-carousel-react"
+			],
+			"registryDependencies": [
+				"button"
+			],
+			"files": [
+				{
+					"path": "src/components/ui/carousel.tsx",
+					"type": "registry:ui"
+				}
+			]
+		},
+		{
+			"name": "chart",
+			"description": "A chart component for data visualization.",
+			"type": "registry:ui",
+			"dependencies": [],
+			"registryDependencies": [],
+			"files": [
+				{
+					"path": "src/components/ui/chart.tsx",
+					"type": "registry:ui"
+				}
+			]
+		},
+		{
+			"name": "checkbox",
+			"description": "A control that allows the user to toggle between checked and not checked.",
+			"type": "registry:ui",
+			"dependencies": [
+				"@radix-ui/react-checkbox"
+			],
+			"registryDependencies": [],
+			"files": [
+				{
+					"path": "src/components/ui/checkbox.tsx",
+					"type": "registry:ui"
+				}
+			]
+		},
+		{
+			"name": "collapsible",
+			"description": "An interactive component which expands/collapses a panel.",
+			"type": "registry:ui",
+			"dependencies": [
+				"@radix-ui/react-collapsible"
+			],
+			"registryDependencies": [],
+			"files": [
+				{
+					"path": "src/components/ui/collapsible.tsx",
+					"type": "registry:ui"
+				}
+			]
+		},
+		{
+			"name": "command",
+			"description": "A command palette component with search and keyboard navigation.",
+			"type": "registry:ui",
+			"dependencies": [
+				"cmdk"
+			],
+			"registryDependencies": [
+				"dialog"
+			],
+			"files": [
+				{
+					"path": "src/components/ui/command.tsx",
+					"type": "registry:ui"
+				}
+			]
+		},
+		{
+			"name": "container",
+			"description": "A container component for layout purposes.",
+			"type": "registry:ui",
+			"dependencies": [],
+			"registryDependencies": [],
+			"files": [
+				{
+					"path": "src/components/ui/container.tsx",
+					"type": "registry:ui"
+				}
+			]
+		},
+		{
+			"name": "context-menu",
+			"description": "A context menu component that appears on right-click.",
+			"type": "registry:ui",
+			"dependencies": [
+				"@radix-ui/react-context-menu"
+			],
+			"registryDependencies": [],
+			"files": [
+				{
+					"path": "src/components/ui/context-menu.tsx",
+					"type": "registry:ui"
+				}
+			]
+		},
+		{
+			"name": "dialog",
+			"description": "A modal dialog component.",
+			"type": "registry:ui",
+			"dependencies": [
+				"@radix-ui/react-dialog"
+			],
+			"registryDependencies": [],
+			"files": [
+				{
+					"path": "src/components/ui/dialog.tsx",
+					"type": "registry:ui"
+				}
+			]
+		},
+		{
+			"name": "drawer",
+			"description": "A drawer component that slides in from the edge of the screen.",
+			"type": "registry:ui",
+			"dependencies": [],
+			"registryDependencies": [],
+			"files": [
+				{
+					"path": "src/components/ui/drawer.tsx",
+					"type": "registry:ui"
+				}
+			]
+		},
+		{
+			"name": "dropdown-menu",
+			"description": "A dropdown menu component.",
+			"type": "registry:ui",
+			"dependencies": [
+				"@radix-ui/react-dropdown-menu"
+			],
+			"registryDependencies": [],
+			"files": [
+				{
+					"path": "src/components/ui/dropdown-menu.tsx",
+					"type": "registry:ui"
+				}
+			]
+		},
+		{
+			"name": "form",
+			"description": "A form component with validation support.",
+			"type": "registry:ui",
+			"dependencies": [
+				"@radix-ui/react-label",
+				"react-hook-form"
+			],
+			"registryDependencies": [
+				"label"
+			],
+			"files": [
+				{
+					"path": "src/components/ui/form.tsx",
+					"type": "registry:ui"
+				}
+			]
+		},
+		{
+			"name": "hover-card",
+			"description": "A card that appears when hovering over a trigger element.",
+			"type": "registry:ui",
+			"dependencies": [],
+			"registryDependencies": [],
+			"files": [
+				{
+					"path": "src/components/ui/hover-card.tsx",
+					"type": "registry:ui"
+				}
+			]
+		},
+		{
+			"name": "input-otp",
+			"description": "An input component for one-time passwords.",
+			"type": "registry:ui",
+			"dependencies": [],
+			"registryDependencies": [],
+			"files": [
+				{
+					"path": "src/components/ui/input-otp.tsx",
+					"type": "registry:ui"
+				}
+			]
+		},
+		{
+			"name": "input",
+			"description": "An input component for text entry.",
+			"type": "registry:ui",
+			"dependencies": [],
+			"registryDependencies": [],
+			"files": [
+				{
+					"path": "src/components/ui/input.tsx",
+					"type": "registry:ui"
+				}
+			]
+		},
+		{
+			"name": "label",
+			"description": "A label component for form elements.",
+			"type": "registry:ui",
+			"dependencies": [
+				"@radix-ui/react-label"
+			],
+			"registryDependencies": [],
+			"files": [
+				{
+					"path": "src/components/ui/label.tsx",
+					"type": "registry:ui"
+				}
+			]
+		},
+		{
+			"name": "menubar",
+			"description": "A menubar component for navigation.",
+			"type": "registry:ui",
+			"dependencies": [],
+			"registryDependencies": [],
+			"files": [
+				{
+					"path": "src/components/ui/menubar.tsx",
+					"type": "registry:ui"
+				}
+			]
+		},
+		{
+			"name": "navigation-menu",
+			"description": "A navigation menu component.",
+			"type": "registry:ui",
+			"dependencies": [],
+			"registryDependencies": [],
+			"files": [
+				{
+					"path": "src/components/ui/navigation-menu.tsx",
+					"type": "registry:ui"
+				}
+			]
+		},
+		{
+			"name": "pagination",
+			"description": "A pagination component for navigating through pages.",
+			"type": "registry:ui",
+			"dependencies": [],
+			"registryDependencies": [],
+			"files": [
+				{
+					"path": "src/components/ui/pagination.tsx",
+					"type": "registry:ui"
+				}
+			]
+		},
+		{
+			"name": "popover",
+			"description": "A popover component that appears relative to a trigger.",
+			"type": "registry:ui",
+			"dependencies": [],
+			"registryDependencies": [],
+			"files": [
+				{
+					"path": "src/components/ui/popover.tsx",
+					"type": "registry:ui"
+				}
+			]
+		},
+		{
+			"name": "progress",
+			"description": "A progress indicator component.",
+			"type": "registry:ui",
+			"dependencies": [],
+			"registryDependencies": [],
+			"files": [
+				{
+					"path": "src/components/ui/progress.tsx",
+					"type": "registry:ui"
+				}
+			]
+		},
+		{
+			"name": "radio-group",
+			"description": "A group of radio buttons.",
+			"type": "registry:ui",
+			"dependencies": [],
+			"registryDependencies": [],
+			"files": [
+				{
+					"path": "src/components/ui/radio-group.tsx",
+					"type": "registry:ui"
+				}
+			]
+		},
+		{
+			"name": "resizable",
+			"description": "A resizable component.",
+			"type": "registry:ui",
+			"dependencies": [],
+			"registryDependencies": [],
+			"files": [
+				{
+					"path": "src/components/ui/resizable.tsx",
+					"type": "registry:ui"
+				}
+			]
+		},
+		{
+			"name": "scroll-area",
+			"description": "A custom scrollable area component.",
+			"type": "registry:ui",
+			"dependencies": [],
+			"registryDependencies": [],
+			"files": [
+				{
+					"path": "src/components/ui/scroll-area.tsx",
+					"type": "registry:ui"
+				}
+			]
+		},
+		{
+			"name": "select",
+			"description": "A select component for choosing from options.",
+			"type": "registry:ui",
+			"dependencies": [],
+			"registryDependencies": [],
+			"files": [
+				{
+					"path": "src/components/ui/select.tsx",
+					"type": "registry:ui"
+				}
+			]
+		},
+		{
+			"name": "separator",
+			"description": "A separator line component.",
+			"type": "registry:ui",
+			"dependencies": [],
+			"registryDependencies": [],
+			"files": [
+				{
+					"path": "src/components/ui/separator.tsx",
+					"type": "registry:ui"
+				}
+			]
+		},
+		{
+			"name": "sheet",
+			"description": "A sheet component that slides in from the edge.",
+			"type": "registry:ui",
+			"dependencies": [],
+			"registryDependencies": [],
+			"files": [
+				{
+					"path": "src/components/ui/sheet.tsx",
+					"type": "registry:ui"
+				}
+			]
+		},
+		{
+			"name": "sidebar",
+			"description": "A sidebar navigation component.",
+			"type": "registry:ui",
+			"dependencies": [],
+			"registryDependencies": [],
+			"files": [
+				{
+					"path": "src/components/ui/sidebar.tsx",
+					"type": "registry:ui"
+				}
+			]
+		},
+		{
+			"name": "skeleton",
+			"description": "A skeleton loading component.",
+			"type": "registry:ui",
+			"dependencies": [],
+			"registryDependencies": [],
+			"files": [
+				{
+					"path": "src/components/ui/skeleton.tsx",
+					"type": "registry:ui"
+				}
+			]
+		},
+		{
+			"name": "slider",
+			"description": "A slider component for selecting values.",
+			"type": "registry:ui",
+			"dependencies": [],
+			"registryDependencies": [],
+			"files": [
+				{
+					"path": "src/components/ui/slider.tsx",
+					"type": "registry:ui"
+				}
+			]
+		},
+		{
+			"name": "sonner",
+			"description": "A toast notification component.",
+			"type": "registry:ui",
+			"dependencies": [],
+			"registryDependencies": [],
+			"files": [
+				{
+					"path": "src/components/ui/sonner.tsx",
+					"type": "registry:ui"
+				}
+			]
+		},
+		{
+			"name": "switch",
+			"description": "A switch toggle component.",
+			"type": "registry:ui",
+			"dependencies": [],
+			"registryDependencies": [],
+			"files": [
+				{
+					"path": "src/components/ui/switch.tsx",
+					"type": "registry:ui"
+				}
+			]
+		},
+		{
+			"name": "table",
+			"description": "A table component for displaying data.",
+			"type": "registry:ui",
+			"dependencies": [],
+			"registryDependencies": [],
+			"files": [
+				{
+					"path": "src/components/ui/table.tsx",
+					"type": "registry:ui"
+				}
+			]
+		},
+		{
+			"name": "tabs",
+			"description": "A tabs component for switching between different views.",
+			"type": "registry:ui",
+			"dependencies": [],
+			"registryDependencies": [],
+			"files": [
+				{
+					"path": "src/components/ui/tabs.tsx",
+					"type": "registry:ui"
+				}
+			]
+		},
+		{
+			"name": "textarea",
+			"description": "A textarea component for multiline text input.",
+			"type": "registry:ui",
+			"dependencies": [],
+			"registryDependencies": [],
+			"files": [
+				{
+					"path": "src/components/ui/textarea.tsx",
+					"type": "registry:ui"
+				}
+			]
+		},
+		{
+			"name": "theme-switcher",
+			"description": "A component for switching between light and dark themes.",
+			"type": "registry:ui",
+			"dependencies": [],
+			"registryDependencies": [],
+			"files": [
+				{
+					"path": "src/components/ui/theme-switcher.tsx",
+					"type": "registry:ui"
+				}
+			]
+		},
+		{
+			"name": "toggle-group",
+			"description": "A group of toggle buttons.",
+			"type": "registry:ui",
+			"dependencies": [],
+			"registryDependencies": [],
+			"files": [
+				{
+					"path": "src/components/ui/toggle-group.tsx",
+					"type": "registry:ui"
+				}
+			]
+		},
+		{
+			"name": "toggle",
+			"description": "A toggle button component.",
+			"type": "registry:ui",
+			"dependencies": [],
+			"registryDependencies": [],
+			"files": [
+				{
+					"path": "src/components/ui/toggle.tsx",
+					"type": "registry:ui"
+				}
+			]
+		},
+		{
+			"name": "tooltip",
+			"description": "A tooltip component that appears on hover.",
+			"type": "registry:ui",
+			"dependencies": [],
+			"registryDependencies": [],
+			"files": [
+				{
+					"path": "src/components/ui/tooltip.tsx",
+					"type": "registry:ui"
+				}
+			]
+		}
+	]
+}
